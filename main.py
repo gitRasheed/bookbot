@@ -1,4 +1,4 @@
-from stats import get_word_count
+from stats import get_word_count, get_char_count
 
 
 def get_book_text(path):
@@ -9,6 +9,7 @@ def get_book_text(path):
 def main():
     print(get_book_text("books/frankenstein.txt"))
     print(get_word_count(get_book_text("books/frankenstein.txt")))
+    print(get_char_count(get_book_text("books/frankenstein.txt")))
 
 
 main()
